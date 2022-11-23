@@ -319,7 +319,7 @@ button{
 
 .team-card{
     display: block;
-    max-height: 428px ;
+   
     background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -397,6 +397,7 @@ button{
 
 }
 .client-item{
+    color: var(--icon-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -429,12 +430,7 @@ button{
     padding-bottom: 60px;
 }
 
-.foot{
-    display: flex;
-    justify-content: baseline;
-    
 
-}
 
 .logo-footer{
     color: var(--white-text-color);
@@ -444,7 +440,13 @@ button{
     margin-bottom: 20px;
 }
 
+.logo-foot{
+    padding: 0;
+}
 
+.adrfoot{
+    display: flex;
+}
 .address-end{
     color: var(--white-text-color);
     text-decoration: none;
@@ -487,8 +489,39 @@ button{
 }
 
 .footer-social{
-    display:flex;
+ display: block;
+ justify-content: baseline;
+ margin-left: 70px;
+}
 
+.title-foot{
+    display: flex;
+    justify-content: baseline;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.social-foot{
+    fill: var(--white-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-foot:focus,
+.social-foot:hover{
+    background-color: var(--accent-color);
+}
+
+.social-footer{
+    display: flex;
+    gap: 10px;
 }
 
 
