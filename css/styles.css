@@ -78,28 +78,7 @@ img{
     padding-bottom: 32px;
 }
 
-.link:hover,
-.link:focus{
-    color: var(--accent-color);
-}   
 
-.contact-item{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    color:var(--article-text-color);
-    fill:var(--article-text-color);
-}
-
-.contact-item:hover,
-.contact-item:focus
-{ color: var(--accent-color);
-    fill:var(--accent-color);
-}
-
-.contact-icon{
-    margin-right: 10px;
-}
 .logo {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -141,16 +120,31 @@ img{
 
 .contacts{
     display: flex;
-
     margin-left: auto;
 }
 
-.contact-item{
+.contact.link{
+    display: flex;
+    align-items: center;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em; 
     text-decoration: none;
+    color:var(--article-text-color);
+    fill:var(--article-text-color);
+}
+
+.contact.link:hover,:focus{
+    color: var(--accent-color);
+}   
+
+.contact-icon{
+    fill:currentColor;
+}
+
+.contact-icon{
+    margin-right: 10px;
 }
 
 .contact-item:not(:last-child){
@@ -172,12 +166,14 @@ img{
 
 
 
-
 /* ========================= HERO ============================== */
 
 
 
 .hero-content{
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom:200px;
     text-align: center;
@@ -251,7 +247,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
     height: 120px;
     border-radius: 4px;
     background-color: var(--bgcolor-team);
@@ -305,7 +300,6 @@ button{
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    
 }
 
 .team{
@@ -366,15 +360,14 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
 
     width: 44px;
     height: 44px;
     border-radius: 50%;
 }
 
-.social-team:last-child{
-    margin-right: 0;
+.team-icon:not(:last-child){
+    margin-right: 10px;
 }
 
 .social-team:hover,
@@ -405,13 +398,12 @@ button{
     height: 92px;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
-    
+    outline: transparent;
 }
 
 .client-item:focus,
 .client-item:hover{
     border-color: #188CE8;
-    fill:#188CE8;
     color: #188CE8;
 }
 
@@ -430,8 +422,6 @@ button{
     padding-bottom: 60px;
 }
 
-
-
 .logo-footer{
     color: var(--white-text-color);
 }
@@ -446,6 +436,7 @@ button{
 
 .adrfoot{
     display: flex;
+    align-items: baseline;
 }
 .address-end{
     color: var(--white-text-color);
@@ -489,15 +480,13 @@ button{
 }
 
 .footer-social{
- display: block;
- justify-content: baseline;
  margin-left: 70px;
 }
 
 .title-foot{
-    display: flex;
-    justify-content: baseline;
+    margin-bottom: 20px;
     font-size: 14px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -506,7 +495,6 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
 
     width: 44px;
     height: 44px;
@@ -615,11 +603,12 @@ button{
 }
 
 .examples-link{
+    display: block;
     text-decoration: none;
 }
 
-.examples-item:hover,
-.examples-item:focus{
+.examples-link:hover,
+.examples-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
