@@ -118,6 +118,10 @@ img{
     text-decoration: none;  
 }
 
+.site-item:hover,:focus{
+    color:var(--accent-color);
+}
+
 .contacts{
     display: flex;
     margin-left: auto;
@@ -136,9 +140,13 @@ img{
     fill:var(--article-text-color);
 }
 
-.contact.link:hover,:focus{
-    color: var(--accent-color);
-}   
+.contact.link:hover{
+    color:var(--accent-color);
+}
+
+.contact.link:focus{
+    color:var(--accent-color);
+}
 
 .contact-icon{
     fill:currentColor;
@@ -606,6 +614,7 @@ button{
 .examples-link{
     display: block;
     text-decoration: none;
+    outline: transparent;
 }
 
 .examples-link:hover,
